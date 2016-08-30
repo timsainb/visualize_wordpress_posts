@@ -14623,11 +14623,13 @@ function connectedNodes() {
         toggle = 0;
     }
 }
-$(function() {
+var jq = jQuery.noConflict();
+
+jq(function() {
     $("#neighbors").draggable();
 });
-$(function () {
-    $("#search").autocomplete({
+jq(function () {
+    jq("#search").autocomplete({
         source: optArray
     });
 });
