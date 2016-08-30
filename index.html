@@ -14450,11 +14450,6 @@ for (var i = 0; i < graph.nodes.length - 1; i++) {
 }
 
 optArray = optArray.sort();
-$(function () {
-    $("#search").autocomplete({
-        source: optArray
-    });
-});
 
 function searchNode() {
     //find the node
@@ -14631,6 +14626,12 @@ function connectedNodes() {
 $(function() {
     $("#neighbors").draggable();
 });
+$(function () {
+    $("#search").autocomplete({
+        source: optArray
+    });
+});
+
  </script>
 
 </div>
