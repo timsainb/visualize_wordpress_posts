@@ -14343,7 +14343,7 @@ p#similar-posts {
 <div id="graph-div"></div>
 
 <script> 
-$.noConflict();
+
 
 var width = 960,
     height = 800;
@@ -14628,9 +14628,9 @@ function connectedNodes() {
         toggle = 0;
     }
 }
-
-$(function() {
-    $("#neighbors").draggable();
+$j = $.noConflict();
+$j(function() {
+    $j("#neighbors").draggable();
 });
  </script>
 
